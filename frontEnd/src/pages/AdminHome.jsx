@@ -18,7 +18,7 @@ const Home = () => {
 
   const loadPapers = async () => {
     try {
-      const response = await axios.get("http://localhost:3000/adminHome", {
+      const response = await axios.get(`${import.meta.env.VITE_API_URL}/adminHome`, {
         params: { ...searchParams, page }
       });
       setPapers(response.data.data);

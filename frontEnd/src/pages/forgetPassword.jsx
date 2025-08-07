@@ -41,7 +41,7 @@ const ForgetPassword = () => {
         let { data, error } = await supabaseClient.auth.resetPasswordForEmail(
           email,
           {
-          redirectTo: 'http://localhost:5173/resetPassword'
+          redirectTo: `${import.meta.env.VITE_API_URL}/resetPassword`
           });
 
           

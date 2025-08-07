@@ -15,7 +15,7 @@ const ProtectedRoute = ({ children }) => {
       }
 
       try {
-        const response = await axios.get('http://localhost:3000/auth/verifyToken', {//see and make changes in the url
+        const response = await axios.get(`${import.meta.env.VITE_API_URL}/auth/verifyToken`, {//see and make changes in the url
           headers: {
             Authorization: `Bearer ${token}`,
           },

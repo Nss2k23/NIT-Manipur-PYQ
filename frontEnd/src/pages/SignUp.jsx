@@ -62,7 +62,7 @@ const SignUp = () => {
     try {
       console.log('Hitting the submit button of signUp');
       setIsLoading(true);
-      const response = await axios.post('http://localhost:3000/auth/signUp', values);
+      const response = await axios.post(`${import.meta.env.VITE_API_URL}/auth/signUp`, values);
       //setIsLoading(false)
       console.log(response);
       if (response.status === 201) {

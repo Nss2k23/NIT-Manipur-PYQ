@@ -48,7 +48,7 @@ const AdminLogIn = () => {
 
     try {
       console.log('Hitting the submit button of LogIn');
-      const response = await axios.post('http://localhost:3000/auth/adminLogIn', values);
+      const response = await axios.post(`${import.meta.env.VITE_API_URL}auth/adminLogIn`, values);
       console.log(response);
       if (response.status === 200) {
         console.log(response.data.access_token);

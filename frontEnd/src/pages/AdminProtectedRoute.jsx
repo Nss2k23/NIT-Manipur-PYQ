@@ -15,7 +15,7 @@ const AdminProtectedRoute = ({ children }) => {
       }
 
       try {
-        const response = await axios.get('http://localhost:3000/auth/verifyToken', {
+        const response = await axios.get(`${import.meta.env.VITE_API_URL}/auth/verifyToken`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },

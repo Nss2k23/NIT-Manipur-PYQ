@@ -17,7 +17,7 @@ const SearchBar = ({ onSearch }) => {
   useEffect(() => {
     const fetchDropdowns = async () => {
       try {
-        const { data } = await axios.get("http://localhost:3000/dropdowns");
+        const { data } = await axios.get(`${import.meta.env.VITE_API_URL}/dropdowns`);
         console.log(data);
         setOptions(data);
       } catch (err) {

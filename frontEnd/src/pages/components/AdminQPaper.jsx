@@ -6,7 +6,7 @@ const AdminQuestionPaperTable = ({ papers }) => {
     const handleDelete=async(paper)=>
     {
         try {
-            await axios.delete(`http://localhost:3000/adminHome/${paper.id}`);
+            await axios.delete(`${import.meta.env.VITE_API_URL}/adminHome/${paper.id}`);
             // Optionally: trigger re-fetch from parent, or remove from state (lift this to parent)
             console.log(`Deleted paper with id: ${paper.id}`);
             alert(`Deleted paper with id: ${paper.id}`);
