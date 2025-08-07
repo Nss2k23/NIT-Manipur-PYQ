@@ -20,7 +20,7 @@ app.use(express.json())
 
 app.use(cors(
     {
-        origin:"*",
+        origin:"https://nit-manipur-pyq.vercel.app",
         methods:["DELETE","GET","POST"]
     }
 ))
