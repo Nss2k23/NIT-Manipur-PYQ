@@ -10,7 +10,7 @@ import ProtectedRoute from './pages/ProtectedRoute';
 import AdminLogIn from './pages/AdminLogIn.jsx';
 import AdminProtectedRoute from './pages/AdminProtectedRoute';
 import AdminHome from './pages/AdminHome';
-import Upload from './pages/upload.jsx';
+import Upload from './pages/Upload.jsx';
 
 
 function App() {
