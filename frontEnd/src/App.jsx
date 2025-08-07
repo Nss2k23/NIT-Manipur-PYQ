@@ -22,7 +22,7 @@ function App() {
       <Route path='/signUp' element={<SignUp/>}></Route>
       <Route path='/logIn' element={<LogIn/>}></Route>
       <Route path='/forgetPassword' element={<ForgetPassword/>}></Route>
-      <Route path='/resetPassword' element={<ResetPassword/>}></Route>
+      <Route path='https://nit-manipur-pyq.onrender.com/resetPassword' element={<ResetPassword/>}></Route>
       <Route path='/adminLogIn' element={<AdminLogIn/>}></Route>
       <Route path="/home" element={<ProtectedRoute><Home /></ProtectedRoute>}/>
       <Route path="/adminHome" element={<AdminProtectedRoute><AdminHome /></AdminProtectedRoute>}/>

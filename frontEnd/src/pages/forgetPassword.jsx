@@ -106,7 +106,7 @@ const ForgetPassword = () => {
                       <button
                       className={`w-full py-2 rounded text-white font-medium ${
                       isCollegeMail
-                          ? 'bg-green-600 hover:bg-green-700'
+                          ? 'bg-blue-600 hover:bg-blue-700'
                           : 'bg-gray-400 cursor-not-allowed'
                       }`}
                       type="submit"
