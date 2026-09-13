@@ -1,1 +1,0 @@
-This repo contains both backend and frontend
