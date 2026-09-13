@@ -60,7 +60,8 @@ router.post('/', async (req, res) => {
 
     const { data, error } = await supabaseClient.auth.signUp({ email, password,
       options: {
-      emailRedirectTo: 'https://nit-manipur-pyq.vercel.app/home'
+      // emailRedirectTo: 'https://nit-manipur-pyq.vercel.app/home'//older
+      emailRedirectTo: 'https://nitmanipurpyq.vercel.app/home'//latest
   }
     });
     console.log('just below auth.signUp');

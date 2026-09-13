@@ -20,7 +20,8 @@ app.use(express.json())
 
 app.use(cors(
     {
-        origin:"https://nit-manipur-pyq.vercel.app",
+        //origin:"https://nit-manipur-pyq.vercel.app" older,
+        origin:"https://nitmanipurpyq.vercel.app",// latest site
         methods:["DELETE","GET","POST"]
     }
 ))

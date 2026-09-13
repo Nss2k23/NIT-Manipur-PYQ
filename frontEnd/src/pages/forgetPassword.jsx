@@ -41,7 +41,8 @@ const ForgetPassword = () => {
         let { data, error } = await supabaseClient.auth.resetPasswordForEmail(
           email,
           {
-          redirectTo: `https://nit-manipur-pyq.vercel.app/resetPassword`
+          //redirectTo: `https://nit-manipur-pyq.vercel.app/resetPassword`//older
+          redirectTo: `https://nitmanipurpyq.vercel.app/resetPassword`// latest
           });
 
           
