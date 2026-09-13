@@ -40,8 +40,8 @@ const AdminQuestionPaperTable = ({ papers }) => {
               <tr key={index} className="hover:bg-gray-50">
                 <td className="p-2 border text-center">{paper.year}</td>
                 <td className="p-2 border text-center">{paper.department}</td>
-                <td className="p-2 border text-center">{paper.subject}</td>
                 <td className="p-2 border text-center">{paper.semester}</td>
+                <td className="p-2 border text-center">{paper.subject}</td>
                 <td className="p-2 border text-center">{paper.faculty}</td>
                 <td className="p-2 border text-center">
                   <a
